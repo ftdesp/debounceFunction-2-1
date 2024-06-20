@@ -8,6 +8,7 @@ export function debounce(func: DebounceFunction, wait: number): DebounceFunction
   return function(...args: any[]) {    
     console.log(timeout);
     if (timeout) {
+      console.log(timeout);
       clearTimeout(timeout);
     }
 
